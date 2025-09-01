@@ -82,3 +82,17 @@ print(players[:4])
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
 
+
+#checking if a value is in a list
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+print('mushrooms' in requested_toppings)
+
+banned_users = ['andrew', 'carolina', 'david']
+user = 'marie'
+if user not in banned_users:
+    print(f"{user.title()}, you can post a response if you wish.")
+
+#checking if the list is not empty
+if my_foods != []:
+    print('List is not Empty!')
+
