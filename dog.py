@@ -2,21 +2,21 @@
 
 class Dog:
 
+
     def __init__(self ,name ,age ,color):
         self.name   = name
         self.age    = age
         self.color  = color
+        self.breed  = 'Kind'
 
 
     def data(self):
         print(f" Dog Name : {self.name} ,Age :  {self.age} ,Color : {self.color}")
     
-
-pet = Dog('Caeser' ,12 ,'Paige')
-pet.data()
-print(pet.name)
-print(pet.age)
-print(pet.color)
+    def get_breed(self):
+        print(f"This Dog is :  {self.breed}") 
 
 
-print('\n\n')
+    #Modifying an Attribute’s Value Through a Method
+    def breed_modify(self ,the_breed):
+        self.breed = the_breed
